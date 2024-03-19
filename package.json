@@ -1,0 +1,47 @@
+{
+  "name": "electron_app",
+  "version": "1.0.2",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "rebuild": "npm rebuild --runtime=electron --target=29.1.4 --disturl=https://atom.io/download/atom-shell --abi=20.9.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.8.2",
+    "@ant-design/pro-components": "^2.6.50",
+    "@ant-design/pro-layout": "^7.17.20",
+    "antd": "^5.15.3",
+    "chokidar": "^3.6.0",
+    "clear-module": "^4.1.2",
+    "husky": "^9.0.11",
+    "lodash": "^4.17.21",
+    "robotjs": "^0.6.0",
+    "umi": "^4.1.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^14.1.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@umijs/plugin-electron": "^0.2.4",
+    "electron": "29.1.4",
+    "electron-rebuild": "^3.2.9",
+    "typescript": "^5.4.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "src/**/*",
+    "tsconfig.json",
+    ".npmrc",
+    ".gitignore",
+    "README.md",
+    ".umirc.ts",
+    "package.json",
+    "typings.d.ts"
+  ]
+}
